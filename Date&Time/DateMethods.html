@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateMethods</title>
+</head>
+<body>
+    <h1 id="res">
+
+    </h1>
+    <button onclick="getDate()">Date</button>
+    <button onclick="year()">Year</button>
+    <button onclick="Month()">Month</button>
+    <button onclick="hours()">Hours</button>
+    <button onclick="menute()">Menute</button>
+    <button onclick="second()">Seconds</button>
+    <button onclick="millisecond()">Milliseconds</button>
+    <button onclick="time()">Time</button>
+    <button onclick="day()">Day</button>
+</body>
+<script type="text/javascript">
+    var date = new Date();
+    function getDate(){
+        document.getElementById('res').innerText = date;
+    }
+    function year(){
+        document.getElementById('res').innerText = date.getFullYear();
+    }
+    function Month(){
+        document.getElementById('res').innerText = date.getMonth();
+    }
+    function hours(){
+        document.getElementById('res').innerText = date.getHours();
+    }
+    function menute(){
+        document.getElementById('res').innerText = date.getMinutes();
+    }
+    function second(){
+        document.getElementById('res').innerText = date.getSeconds();
+    }
+    function millisecond(){
+        document.getElementById('res').innerText = date.getMilliseconds();
+    }
+    function time(){
+        document.getElementById('res').innerText = date.getTime();
+    }
+    function day(){
+        document.getElementById('res').innerText = date.getDay();
+    }
+</script>
+</html>
